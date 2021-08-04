@@ -29,7 +29,7 @@ function SendMessage() {
     setReply((replyMsg) => [...replyMsg, value]);
   };
 
-  //console.log(allMessages);
+  // console.log(allMessages);
   return (
     <div className={classes.body}>
       <Typography className={classes.textFields}>
