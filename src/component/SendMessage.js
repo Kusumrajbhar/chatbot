@@ -31,26 +31,24 @@ function SendMessage() {
 
   //console.log(allMessages);
   return (
-    <div className={classes.body}>
+    <div className={classes.body} data-testid="chat-1">
+      <h2>ChatBot</h2>
       <Typography className={classes.textFields}>
-        <Typography className={classes.bot}>
-          {reply &&
-            reply.map((replies, index) => (
-              <p key={index}>
-                {replies} {allMessages[index + 1]?.msg}
-              </p>
-            ))}
-        </Typography>
+        {reply &&
+          reply.map((replies, index) => (
+            <Typography className={classes.bot}>
+              <p key={index}>{replies}</p>
+            </Typography>
+          ))}
       </Typography>
       <br />
 
-      {/* {allMessages &&
+      {allMessages &&
         allMessages.map((msg, index) => (
           <Typography className={classes.me}>
-            {" "}
-            <p key={index}>{msg}</p>{" "}
+            <p key={index}>{msg}</p>
           </Typography>
-        ))} */}
+        ))}
 
       <br />
       <Typography className={classes.text}>
