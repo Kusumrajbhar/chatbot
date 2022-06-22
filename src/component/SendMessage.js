@@ -29,14 +29,14 @@ function SendMessage() {
     setReply((replyMsg) => [...replyMsg, value]);
   };
 
-  //console.log(allMessages);
+  // console.log(allMessages);
   return (
     <div className={classes.body} data-testid="chat-1">
       <h2>ChatBot</h2>
       <Typography className={classes.textFields}>
         {reply &&
           reply.map((replies, index) => (
-            <Typography className={classes.bot}>
+            <Typography key={index} className={classes.bot}>
               <p key={index}>{replies}</p>
             </Typography>
           ))}
@@ -45,7 +45,7 @@ function SendMessage() {
 
       {allMessages &&
         allMessages.map((msg, index) => (
-          <Typography className={classes.me}>
+          <Typography key={index} className={classes.me}>
             <p key={index}>{msg}</p>
           </Typography>
         ))}

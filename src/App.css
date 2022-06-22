@@ -2,6 +2,27 @@
   text-align: center;
 }
 
+@keyframes changeBg {
+  0% {
+    background-color: #80cbc4;
+  }
+  20% {
+    background-color: #f48fb1;
+  }
+  40% {
+    background-color: #90caf9;
+  }
+  60% {
+    background-color: #f0f4c3;
+  }
+  80% {
+    background-color: #ba68c8;
+  }
+  100% {
+    background-color: aqua;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

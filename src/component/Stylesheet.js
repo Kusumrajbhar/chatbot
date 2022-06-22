@@ -13,7 +13,10 @@ const useStyle = makeStyles({
     marginLeft: "auto",
     marginRight: "auto",
     border: " 2px solid black",
+    animation: "changeBg 1s linear infinite",
+    padding: "20px",
   },
+
   input: {
     position: "sticky",
     bottom: "0",
@@ -47,7 +50,7 @@ const useStyle = makeStyles({
   },
   textFields: {
     display: "block",
-    //flexDirection: "column",
+    // flexDirection: "column",
   },
 });
 

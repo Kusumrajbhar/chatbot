@@ -1,5 +1,5 @@
 import "./App.css";
-import ChatbotKit from "./chatbot/ChatbotKit";
+// import ChatbotKit from "./chatbot/ChatbotKit";
 import SendMessage from "./component/SendMessage";
 
 function App() {
